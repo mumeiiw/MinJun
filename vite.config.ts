@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 
 // Project GitHub Pages serves from https://<user>.github.io/kkamdol/
 // Override with VITE_BASE (e.g. "/" ) when using a custom domain.
-const base = process.env.VITE_BASE ?? "/kkamdol/";
+const base = process.env.VITE_BASE || "/kkamdol/";
 
 export default defineConfig({
   base,
